@@ -16,7 +16,7 @@ Bootstrap+jQuery+Thymeleaf|SpringBoot+Mybatis+MySQL|Druid+Redis+RabbitMQ+Guava
 验证用户账号密码正确后，通过UUID生成唯一id作为token，以token为key，用户信息为value模拟session储存到redis中，同时将token存储到cookie，保存登录状态
 + 在分布式集群情况下，服务器间同步可能因为延迟导致session不一致，通过redis吧session数据集中存储，解决session不一致的问题
 ### JSR303自定义参数验证
-通过JSR303自定义校验器，实现对用户账号、密码的严重，使验证逻辑从业务代码中脱离处理，减少代码量。
+通过JSR303自定义校验器，实现对用户账号、密码的验证，使验证逻辑从业务代码中脱离处理，减少代码量。
 ### 全局异常统一处理
 拦截所有异常，通过包装类统一将展示异常。
 ### 页面级缓存+对象级缓存
