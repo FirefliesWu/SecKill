@@ -53,4 +53,4 @@ Bootstrap+jQuery+Thymeleaf|SpringBoot+Mybatis+MySQL|Druid+Redis+RabbitMQ+Guava
 项目使用RateLimiter实现限流，RateLimiter是Guava提供的基于令牌桶算法的限流实现类，通过调整生成token的速率来限制用户频繁访问秒杀页面，防止超大流量冲垮系统。
 ## 压测效果
 + 优化前：开启1000个线程循环10次访问，QPS = 146
-+ 优化后：开启1000个线程循环10吃访问，QPS = 361
++ 优化后：开启1000个线程循环10次访问，QPS = 361
